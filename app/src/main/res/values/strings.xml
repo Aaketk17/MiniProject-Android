@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Remind me !</string>
+    <string name="addAlarmFragment">Add Alarm fragment</string>
+    <string name="alarmFragment">Alarm Fragment</string>
+    <string name="selectDate">Select Date</string>
+    <string name="selectTme">Select Time</string>
+    <string name="setAlarm">Set Alarm</string>
+    <string name="cancelAlarm">Cancel Alarm</string>
+    <string name="reminderFragment">Reminder Fragment</string>
+    <string name="alarm">Alarm</string>
+    <string name="reminder">Reminder</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="location">Location</string>
+    <string name="titlePlaceholder">Add Title</string>
+    <string name="descPlaceholder">Add Description</string>
+    <string name="locationPlaceholder">Add Location</string>
+    <string name="selectDateTime">Date - Time</string>
+    <string name="extra">Additional Info</string>
+    <string name="upload">Select Image</string>
+    <string name="save">Save</string>
+</resources>

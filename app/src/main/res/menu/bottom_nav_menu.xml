@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Alarm"
+        android:checked="true"
+        android:id="@+id/alarmFragment"
+        android:icon="@drawable/ic_baseline_alarm" />
+
+    <item android:title="Reminder"
+          android:id="@+id/reminderFragment"
+          android:icon="@drawable/ic_outline_reminder"/>
+
+</menu>

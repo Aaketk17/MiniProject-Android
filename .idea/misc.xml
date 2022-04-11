@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3725" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/alarmOn.xml" value="0.166" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/alarm_selector.xml" value="0.3725" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/ee.xml" value="0.3725" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/ic_baseline_add_alarm.xml" value="0.3725" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/ic_baseline_alarm.xml" value="0.3325" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/ic_baseline_alarm_selected.xml" value="0.1995" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3725" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/ic_outline_reminder.xml" value="0.3725" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/ic_outline_reminder_selected.xml" value="0.1995" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/nav_item_color_selected.xml" value="0.3725" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/drawable/reminder_selector.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/activity_add_alarm.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/activity_add_reminder.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/fragment_add_alarm.xml" value="0.371875" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/fragment_alarm.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/fragment_reminder.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/menu/bottom_nav_menu.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
