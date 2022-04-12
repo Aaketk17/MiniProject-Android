@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/viewReminders"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginBottom="20dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardBg"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/reminderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/idColor"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/reminderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/titleReminderColor"
+                android:text="Title"
+                android:fontFamily="@font/poppinsbold"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/reminderId"
+                app:layout_constraintTop_toTopOf="@+id/reminderId" />
+
+            <TextView
+                android:id="@+id/reminderDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/descColor"
+                android:text="12-04-1998"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/reminderTitle"
+                app:layout_constraintTop_toBottomOf="@+id/reminderTitle" />
+
+            <TextView
+                android:id="@+id/reminderLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jaffna"
+                android:textColor="@color/descColor"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/reminderTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

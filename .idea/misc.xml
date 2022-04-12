@@ -18,9 +18,11 @@
         <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/activity_add_alarm.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/activity_add_reminder.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/activity_show_reminders.xml" value="0.21842105263157896" />
         <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/fragment_add_alarm.xml" value="0.371875" />
         <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/fragment_alarm.xml" value="0.33" />
-        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/fragment_reminder.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/fragment_reminder.xml" value="0.21842105263157896" />
+        <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/layout/my_row.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/Desktop/MyApplication4/app/src/main/res/menu/bottom_nav_menu.xml" value="0.33" />
       </map>
     </option>

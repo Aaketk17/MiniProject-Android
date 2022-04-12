@@ -6,12 +6,17 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#2C2B2B</color>
+    <color name="cardBg">#404040</color>
+    <color name="textColor">#DD393737</color>
     <color name="white">#FFFFFFFF</color>
     <color name="underline">#28FFFCFC</color>
     <color name="bottomNavColor">#1D1B1B</color>
     <color name="addBtns">#1D1B1B</color>
     <color name="bottomNavForeground">#C1C1C1</color>
     <color name="titleColor">#C1C1C1</color>
+    <color name="idColor">#FFFFFF</color>
+    <color name="titleReminderColor">#FFFFFF</color>
+    <color name="descColor">#A9C1C1C1</color>
     <color name="placeholderColor">#83FFFFFF</color>
     <color name="selectedColor">#F1673B</color>
     <color name="floatingAlarmAdd">#F1673B</color>

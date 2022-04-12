@@ -21,4 +21,6 @@
     <string name="extra">Additional Info</string>
     <string name="upload">Select Image</string>
     <string name="save">Save</string>
+    <string name="addAlarm">Add Alarm</string>
+    <string name="addReminder">Add Reminder</string>
 </resources>

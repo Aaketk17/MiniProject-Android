@@ -5,8 +5,8 @@
     android:id="@+id/reminderFragmentLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:background="@color/black"
+    android:padding="10dp"
     tools:context=".ReminderFragment">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -21,4 +21,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="40dp"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </FrameLayout>

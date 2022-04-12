@@ -37,7 +37,6 @@ public class AddAlarm extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("Add Alarm");
         binding = ActivityAddAlarmBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         createNotificationChannel();

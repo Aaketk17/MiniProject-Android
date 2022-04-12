@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,11 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".AddReminder"
+            android:name=".ShowReminders"
             android:exported="false" />
         <activity
+            android:name=".AddReminder"
+            android:exported="false"
+            android:label="@string/addReminder"
+            android:parentActivityName=".AddReminder"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
             android:name=".AddAlarm"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/addAlarm"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -24,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <receiver android:name=".AlarmReceiver" />
     </application>
 

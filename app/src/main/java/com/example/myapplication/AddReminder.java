@@ -12,13 +12,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import com.example.myapplication.databinding.ActivityAddReminderBinding;
 
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Locale;
 
 public class AddReminder extends AppCompatActivity {
@@ -26,11 +25,11 @@ public class AddReminder extends AppCompatActivity {
     private ActivityAddReminderBinding binding;
     int hour,minute,year,month,day;
     private static final int PICK_IMAGE = 100;
+    private Uri imageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("Add Reminder");
         binding = ActivityAddReminderBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -52,6 +51,28 @@ public class AddReminder extends AppCompatActivity {
                 openGallery();
             }
         });
+
+        binding.saveData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                 if(binding.title.getText().toString().isEmpty() || binding.desc.getText().toString().isEmpty() || binding.location.getText().toString().isEmpty()
+                        || binding.imageView.getDrawable() == null){
+                        Toast.makeText(AddReminder.this,"Fill all the Fields before Saving, Selected Date time should be future date and time",Toast.LENGTH_LONG).show();
+                 } else {
+                        Log.d("value","not come");
+                        DatabaseHelper remindMeDB = new DatabaseHelper(AddReminder.this);
+                        remindMeDB.addData(binding.title.getText().toString().trim(),binding.location.getText().toString().trim(),binding.desc.getText().toString().trim(),binding.dateTimeLabel.getText().toString().trim(),imageUri.toString().trim());
+                        binding.title.setText("");
+                        binding.title.setHint("Add Title");
+                        binding.desc.setText("");
+                        binding.desc.setHint("Add Description");
+                        binding.location.setText("");
+                        binding.location.setHint("Add Location");
+                        binding.imageView.setImageURI(null);
+                 }
+            }
+        });
     }
 
     private void openGallery() {
@@ -63,7 +84,7 @@ public class AddReminder extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == PICK_IMAGE){
-            Uri imageUri = data.getData();
+            imageUri = data.getData();
             binding.imageView.setImageURI(imageUri);
         }
     }
