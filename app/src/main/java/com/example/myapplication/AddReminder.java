@@ -60,7 +60,6 @@ public class AddReminder extends AppCompatActivity {
                         || binding.imageView.getDrawable() == null){
                         Toast.makeText(AddReminder.this,"Fill all the Fields before Saving, Selected Date time should be future date and time",Toast.LENGTH_LONG).show();
                  } else {
-                        Log.d("value","not come");
                         DatabaseHelper remindMeDB = new DatabaseHelper(AddReminder.this);
                         remindMeDB.addData(binding.title.getText().toString().trim(),binding.location.getText().toString().trim(),binding.desc.getText().toString().trim(),binding.dateTimeLabel.getText().toString().trim(),imageUri.toString().trim());
                         binding.title.setText("");
