@@ -26,7 +26,7 @@ public class ReminderFragment extends Fragment {
     private RecyclerView recyclerView;
     FragmentReminderBinding binding;
     DatabaseHelper databaseHelper;
-    ArrayList<String> reminderId, reminderTitle, reminderDateTime,reminderLocation;
+    ArrayList<String> reminderId, reminderTitle,reminderDesc, reminderDateTime,reminderUri,reminderLocation;
 
     public ReminderFragment() {
 
@@ -52,12 +52,13 @@ public class ReminderFragment extends Fragment {
 
         reminderId = new ArrayList<>();
         reminderTitle = new ArrayList<>();
+        reminderDesc = new ArrayList<>();
         reminderDateTime = new ArrayList<>();
+        reminderUri = new ArrayList<>();
         reminderLocation = new ArrayList<>();
 
         storeDataToArray();
-        customAdapter = new CustomAdapter(getActivity(),reminderId,reminderTitle,reminderDateTime,reminderLocation);
-
+        customAdapter = new CustomAdapter(getActivity(),reminderId,reminderTitle,reminderDesc,reminderDateTime,reminderUri,reminderLocation);
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -76,7 +77,9 @@ public class ReminderFragment extends Fragment {
             while(cursor.moveToNext()){
                 reminderId.add(cursor.getString(0));
                 reminderTitle.add(cursor.getString(1));
+                reminderDesc.add(cursor.getString(2));
                 reminderDateTime.add(cursor.getString(3));
+                reminderUri.add(cursor.getString(4));
                 reminderLocation.add(cursor.getString(5));
             }
         }

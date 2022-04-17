@@ -78,4 +78,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return cursor;
     }
+
+//    public void deleteData(int reminderId){
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        db.delete(TABLE_NAME,"_id=?")
+//    }
 }
