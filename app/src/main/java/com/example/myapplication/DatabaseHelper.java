@@ -23,7 +23,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_LOCATION = "reminderLocation";
     private static final String COLUMN_URI = "reminderUri";
 
-
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
@@ -80,7 +79,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public long deleteData(String reminderId){
-//        String query = "SELECT * FROM " + TABLE_NAME;
         SQLiteDatabase db = this.getReadableDatabase();
         long result = db.delete(TABLE_NAME,"_id=?",new String[] {reminderId});
 

@@ -44,7 +44,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(@NonNull CustomAdapter.MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        holder.reminderId.setText(String.valueOf(reminderId.get(position)));
+//        holder.reminderId.setText(String.valueOf(reminderId.get(position)));
         holder.reminderTitle.setText(String.valueOf(reminderTitle.get(position)));
         holder.reminderDateTime.setText(String.valueOf(reminderDateTime.get(position)));
         holder.reminderLocation.setText(String.valueOf(reminderLocation.get(position)));
@@ -75,7 +75,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            reminderId = itemView.findViewById(R.id.reminderId);
+//            reminderId = itemView.findViewById(R.id.reminderId);
             reminderTitle = itemView.findViewById(R.id.reminderTitle);
             reminderLocation = itemView.findViewById(R.id.reminderLocation);
             reminderDateTime = itemView.findViewById(R.id.reminderDateTime);
